@@ -1,0 +1,20 @@
+service: apollo-server-notify-slack
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: nodejs14.x
+  environment:
+    SLACK_WEBHOOK_URL: ${env:SLACK_WEBHOOK_URL}
+functions:
+  graphql:
+    # this is formatted as <FILENAME>.<HANDLER>
+    handler: graphql.graphqlHandler
+    events:
+    - http:
+        path: /
+        method: post
+        cors: true
+    - http:
+        path: /
+        method: get
+        cors: true

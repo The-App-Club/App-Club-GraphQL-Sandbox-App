@@ -1,0 +1,5 @@
+.mesh
+.serverless
+.gitignore
+.prettierignore
+yarn.lock

@@ -1,0 +1,12 @@
+service: graphqlMeshHelloWorldServerless
+frameworkVersion: '2'
+provider:
+  name: aws
+  region: ap-northeast-1 #https://www.serverless.com/framework/docs/providers/aws/guide/deploying#tips
+  runtime: nodejs14.x #https://www.serverless.com/blog/serverless-github-webhook-slack/
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: POST /cool

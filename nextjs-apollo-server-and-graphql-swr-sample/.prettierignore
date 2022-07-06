@@ -1,0 +1,8 @@
+node_modules*
+.gitignore
+.prettierignore
+.stylelintignore
+.next
+public
+yarn.lock
+.env*

@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "dev": "mesh dev",
+    "build": "mesh build",
+    "serve": "mesh serve",
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\""
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "0.44.5",
+    "@graphql-mesh/json-schema": "0.22.13",
+    "@graphql-mesh/transform-mock": "0.12.5",
+    "graphql": "16.0.1",
+    "graphql-request": "^3.7.0",
+    "express": "^4.17.2",
+    "serverless-http": "^2.7.0"
+  }
+}

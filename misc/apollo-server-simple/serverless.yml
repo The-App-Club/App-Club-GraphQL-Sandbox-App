@@ -1,0 +1,18 @@
+service: apollo-server-simple
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: nodejs14.x
+functions:
+  graphql:
+    # this is formatted as <FILENAME>.<HANDLER>
+    handler: graphql.graphqlHandler
+    events:
+    - http:
+        path: /
+        method: post
+        cors: true
+    - http:
+        path: /
+        method: get
+        cors: true

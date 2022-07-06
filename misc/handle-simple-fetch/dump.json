@@ -1,0 +1,42 @@
+{
+  "data": {
+    "allEpisode": [
+      {
+        "date": "2022-01-04T18:30:00.000Z",
+        "title": "Marketing Automation With Customer.io + Next.js",
+        "guest": [{ "name": "Joel Hooks", "twitter": "jhooks" }],
+        "description": "Joel hooks has been building full-featured marketing automation using Nextjs & Customer.io for some of the most popular dev education sites out there. In this episode, he'll share how it's done!"
+      },
+      {
+        "date": "2022-01-06T17:30:00.000Z",
+        "title": "Let's Learn tRPC!",
+        "guest": [{ "name": "Alex / KATT", "twitter": "alexdotjs" }],
+        "description": "The promise of tRPC is end-to-end typesafe APIs. In this episode, Alex / KATT will teach us what that means and how we can get started using tRPC in a React app."
+      },
+      {
+        "date": "2022-01-12T00:00:00.000Z",
+        "title": "Build an App With Supabase and NextJS",
+        "guest": [{ "name": "Jon Meyers", "twitter": "_dijonmusters" }],
+        "description": "Supabase combines database storage and authentication into a powerful workflow for web devs. In this episode, Jon Meyers will teach us how to build a Next.js app with Supabase and deploy it to Netlify!"
+      },
+      {
+        "date": "2022-01-13T17:30:00.000Z",
+        "title": "What Can You Automate With n8n?",
+        "guest": [{ "name": "Harshil Agrawal", "twitter": "harshil1712" }],
+        "description": "Used wisely, automation is a huge time saver. In this episode, we'll learn about all the incredible things we can automate using n8n from Harshil Agrawal!"
+      },
+      {
+        "date": "2022-01-25T18:30:00.000Z",
+        "title": "Learn About Islands Architecture With Slinkity",
+        "guest": [{ "name": "Ben Holmes", "twitter": "BHolmesDev" }],
+        "description": "Partial hydration lets you ship zero JS by default. In this episode, Ben Holmes will teach us how Slinkity lets us use any component framework to build low-JS dynamic apps on the Jamstack."
+      },
+      {
+        "date": "2022-02-15T16:30:00.000Z",
+        "title": "Planning (and Publishing) Better Content",
+        "guest": [{ "name": "Stephanie Morillo", "twitter": "radiomorillo" }],
+        "description": "When it comes to content strategy, Stephanie Morillo is one of the best out there. In this episode, she'll teach us how to plan, write, and — most importantly — *ship* great content consistently!"
+      }
+    ]
+  }
+}

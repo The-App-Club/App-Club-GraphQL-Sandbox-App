@@ -1,0 +1,24 @@
+{
+  "errors": [
+    {
+      "message": "Field \"getSampleList\" of type \"[Sample]\" must have a selection of subfields. Did you mean \"getSampleList { ... }\"?",
+      "extensions": {
+        "code": "GRAPHQL_VALIDATION_FAILED",
+        "exception": {
+          "stacktrace": [
+            "GraphQLError: Field \"getSampleList\" of type \"[Sample]\" must have a selection of subfields. Did you mean \"getSampleList { ... }\"?",
+            "    at Object.Field (/var/task/node_modules/graphql/validation/rules/ScalarLeafsRule.js:42:13)",
+            "    at Object.enter (/var/task/node_modules/graphql/language/visitor.js:303:32)",
+            "    at Object.enter (/var/task/node_modules/graphql/utilities/TypeInfo.js:391:27)",
+            "    at visit (/var/task/node_modules/graphql/language/visitor.js:200:21)",
+            "    at validate (/var/task/node_modules/graphql/validation/validate.js:91:24)",
+            "    at validate (/var/task/node_modules/apollo-server-core/dist/requestPipeline.js:187:39)",
+            "    at processGraphQLRequest (/var/task/node_modules/apollo-server-core/dist/requestPipeline.js:90:34)",
+            "    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+            "    at async processHTTPRequest (/var/task/node_modules/apollo-server-core/dist/runHttpQuery.js:187:30)"
+          ]
+        }
+      }
+    }
+  ]
+}
