@@ -1,0 +1,4 @@
+- Reference
+  - [demo](https://codesandbox.io/s/next-js-yoga-graphiql-lf6ktu)
+  - [docs](https://the-guild.dev/graphql/yoga-server/docs/integrations/integration-with-nextjs)
+  - [blog](https://zenn.dev/link/comments/d0a164ef258265)

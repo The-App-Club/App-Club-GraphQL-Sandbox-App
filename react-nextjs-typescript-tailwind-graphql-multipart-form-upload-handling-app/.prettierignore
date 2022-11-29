@@ -1,0 +1,13 @@
+node_modules
+.gitignore
+.prettierignore
+.eslintignore
+.stylelintignore
+*ico
+.env*
+.next
+out
+yarn.lock
+public
+prisma
+*version*
