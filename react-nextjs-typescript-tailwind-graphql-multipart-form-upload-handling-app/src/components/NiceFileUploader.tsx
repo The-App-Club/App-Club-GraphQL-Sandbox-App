@@ -2,10 +2,15 @@ import Button from '@mui/joy/Button';
 import {Box} from '@chakra-ui/react';
 import React, {useEffect, useState} from 'react';
 import {FileUploader} from 'react-drag-drop-files';
-import {useGraphql} from '@/hooks/useGraphql';
 
-import {request} from 'graphql-request';
+import {request, gql} from 'graphql-request';
 import useSWR from 'swr';
+
+const query = gql`
+  mutation ($file: File!, $name: String!) {
+    readTextFile(file: $file, name: $name)
+  }
+`;
 
 // https://stackoverflow.com/a/65562706/15972569
 const fetcher = (
@@ -31,13 +36,7 @@ const NiceFileUploader = () => {
     file: null,
     name: null,
   });
-  const {data, error} = useSWR(
-    [
-      `mutation ($file: File!, $name: String!) { readTextFile(file: $file,name: $name) }`,
-      variables,
-    ],
-    fetcher
-  );
+  const {data, error} = useSWR([query, variables], fetcher);
 
   const [modelURL, setModalURL] = useState<
     string | ArrayBuffer | null | undefined
